@@ -55,7 +55,7 @@ class CreateController extends AbstractApplicationController
                 
                 $this->getEventManager()->trigger('aclRoleCreate', $this, array(
                     'authId' => $this->identity()->getAuthId(),
-                    'historyUrl' => $this->getRequest()->getUri(),
+                    'requestUrl' => $this->getRequest()->getUri(),
                     'aclRoleEntity' => $aclRoleEntity
                 ));
                 

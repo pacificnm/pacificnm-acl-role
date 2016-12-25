@@ -52,7 +52,7 @@ class DeleteController extends AbstractApplicationController
                 
                 $this->getEventManager()->trigger('aclRoleDelete', $this, array(
                     'authId' => $this->identity() ->getAuthId(),
-                    'historyUrl' => $this->getRequest()->getUri(),
+                    'requestUrl' => $this->getRequest()->getUri(),
                     'aclRoleEntity' => $entity
                 ));
                 

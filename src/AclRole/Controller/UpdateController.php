@@ -65,7 +65,7 @@ class UpdateController extends AbstractApplicationController
                 
                 $this->getEventManager()->trigger('aclRoleUpdate', $this, array(
                     'authId' => $this->identity()->getAuthId(),
-                    'historyUrl' => $this->getRequest()->getUri(),
+                    'requestUrl' => $this->getRequest()->getUri(),
                     'aclRoleEntity' => $aclRoleEntity
                 ));
                 
