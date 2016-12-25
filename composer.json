@@ -13,7 +13,6 @@
     "require": {
     	"php" : ">=5.5",
     	"zendframework/zendframework" : "~2.5",
-    	"zendframework/zftool" : "dev-master",
     	"pacificnm/pacificnm-acl" : "dev-master"
     }
 }

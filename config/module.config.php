@@ -33,7 +33,7 @@ return array(
             'acl-role-create' => array(
                 'pageTitle' => 'Acl Role',
                 'pageSubTitle' => 'New',
-                'activeMenuItem' => 'admin',
+                'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
                 'type' => 'literal',
                 'options' => array(
@@ -47,7 +47,7 @@ return array(
             'acl-role-delete' => array(
                 'pageTitle' => 'Acl Role',
                 'pageSubTitle' => 'Delete',
-                'activeMenuItem' => 'admin',
+                'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
                 'type' => 'segment',
                 'options' => array(
@@ -64,7 +64,7 @@ return array(
             'acl-role-index' => array(
                 'pageTitle' => 'Acl Role',
                 'pageSubTitle' => 'Home',
-                'activeMenuItem' => 'admin',
+                'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
                 'type' => 'literal',
                 'options' => array(
@@ -78,7 +78,7 @@ return array(
             'acl-role-rest' => array(
                 'pageTitle' => 'Acl Role',
                 'pageSubTitle' => 'Rest',
-                'activeMenuItem' => 'admin',
+                'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
                 'type' => 'segment',
                 'options' => array(
@@ -94,7 +94,7 @@ return array(
             'acl-role-update' => array(
                 'pageTitle' => 'Acl Role',
                 'pageSubTitle' => 'Edit',
-                'activeMenuItem' => 'admin',
+                'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
                 'type' => 'segment',
                 'options' => array(
@@ -111,7 +111,7 @@ return array(
             'acl-role-view' => array(
                 'pageTitle' => 'Acl Role',
                 'pageSubTitle' => 'View',
-                'activeMenuItem' => 'admin',
+                'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
                 'type' => 'segment',
                 'options' => array(
@@ -167,6 +167,7 @@ return array(
     'acl' => array(
         'default' => array(
             'guest' => array(),
+            'user' => array(),
             'administrator' => array(
                 'acl-role-index',
                 'acl-role-create',
@@ -179,8 +180,8 @@ return array(
     'menu' => array(
         'default' => array(
             array(
-                'key' => 'admin',
                 'name' => 'Admin',
+                'route' => 'admin-index',
                 'icon' => 'fa fa-gear',
                 'order' => 99,
                 'active' => true,

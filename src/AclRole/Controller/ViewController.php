@@ -45,7 +45,7 @@ class ViewController extends AbstractApplicationController
         
         $this->getEventManager()->trigger('aclRoleView', $this, array(
             'authId' => $this->identity() ->getAuthId(),
-            'historyUrl' => $this->getRequest()->getUri(),
+            'requestUrl' => $this->getRequest()->getUri(),
             'aclRoleEntity' => $entity
         ));
         
