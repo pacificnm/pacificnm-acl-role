@@ -1,6 +1,7 @@
-# pacificnm-acl
+# pacificnm-acl-roles
 
-Provides a lightweight and flexible access control list (ACL) implementation for privileges management.
+Provides access roles.
 
-File issues at https://github.com/pacificnm/pacificnm-acl/issues
-Documentation is at https://github.com/pacificnm/pacificnm-acl/
+File issues at https://github.com/pacificnm/pacificnm-acl-role/issues
+
+Documentation is at https://github.com/pacificnm/pacificnm-acl-role/
