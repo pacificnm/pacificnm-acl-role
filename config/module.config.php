@@ -3,7 +3,7 @@ return array(
     'module' => array(
         'AclRole' => array(
             'name' => 'AclRole',
-            'version' => '1.0.1',
+            'version' => '1.0.3',
             'install' => array(
                 'require' => array(),
                 'sql' => 'sql/acl_role.sql'
@@ -35,6 +35,8 @@ return array(
                 'pageSubTitle' => 'New',
                 'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
+                'icon' => 'fa fa-lock',
+                'layout' => 'admin',
                 'type' => 'literal',
                 'options' => array(
                     'route' => '/admin/acl-role/create',
@@ -49,6 +51,8 @@ return array(
                 'pageSubTitle' => 'Delete',
                 'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
+                'icon' => 'fa fa-lock',
+                'layout' => 'admin',
                 'type' => 'segment',
                 'options' => array(
                     'route' => '/admin/acl-role/delete/[:id]',
@@ -66,6 +70,8 @@ return array(
                 'pageSubTitle' => 'Home',
                 'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
+                'icon' => 'fa fa-lock',
+                'layout' => 'admin',
                 'type' => 'literal',
                 'options' => array(
                     'route' => '/admin/acl-role',
@@ -80,6 +86,8 @@ return array(
                 'pageSubTitle' => 'Rest',
                 'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
+                'icon' => 'fa fa-lock',
+                'layout' => 'rest',
                 'type' => 'segment',
                 'options' => array(
                     'route' => '/api/acl-role[/:id]',
@@ -96,6 +104,8 @@ return array(
                 'pageSubTitle' => 'Edit',
                 'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
+                'icon' => 'fa fa-lock',
+                'layout' => 'admin',
                 'type' => 'segment',
                 'options' => array(
                     'route' => '/admin/acl-role/update/[:id]',
@@ -113,6 +123,8 @@ return array(
                 'pageSubTitle' => 'View',
                 'activeMenuItem' => 'admin-index',
                 'activeSubMenuItem' => 'acl-index',
+                'icon' => 'fa fa-lock',
+                'layout' => 'admin',
                 'type' => 'segment',
                 'options' => array(
                     'route' => '/admin/acl-role/view/[:id]',
@@ -184,6 +196,7 @@ return array(
                 'route' => 'admin-index',
                 'icon' => 'fa fa-gear',
                 'order' => 99,
+                'location' => 'left',
                 'active' => true,
                 'items' => array()
             )
