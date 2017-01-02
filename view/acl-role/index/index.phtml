@@ -18,6 +18,14 @@
 					<small><?php echo $this->translate("Page"); ?>: <?php echo $this->page; ?></small>
 				</h3>
 				<div class="box-tools">
+					<a href="<?php echo $this->url("acl-index"); ?>" title="<?php echo $this->translate("Rules"); ?>" class="btn-box-tool">
+						<i class="fa fa-lock" aria-hidden="true"></i> <?php echo $this->translate("Rules"); ?>
+					</a>
+					
+					<a href="<?php echo $this->url("acl-resource-index"); ?>" title="<?php echo $this->translate("Resources"); ?>" class="btn-box-tool">
+						<i class="fa fa-lock" aria-hidden="true"></i> <?php echo $this->translate("Resources"); ?>
+					</a>
+					
 					<?php echo $this->searchButton("acl-role-search"); ?>
 					
 					<?php echo $this->createButton("acl-role-create"); ?>

@@ -6,7 +6,7 @@
  * @copyright Copyright (c) 20011-2016 Pacific NM USA Inc. (https://www.pacificnm.com)
  * @license https://github.com/pacificnm/pacificnm-acl-role/blob/master/LICENSE.md
  */
-namespace AclRole\View\Helper;
+namespace Pacificnm\AclRole\View\Helper;
 
 use Zend\View\Helper\AbstractHelper;
 
